@@ -1,0 +1,186 @@
+/* Navbar */
+.navbar {
+  transition: all 500ms ease-in-out;
+}
+
+.navbar > div {
+  transition: all 1000ms ease-in-out;
+}
+.navbar-brand {
+  font-family: Viga;
+  font-size: 32px;
+  color: #fff !important;
+}
+.navbar-light .navbar-toggler {
+  color: #fff !important;
+  border-color: #fff !important;
+  background: #fff;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(img/hero.jpg);
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+.jumbotron .display-4 {
+  color: white;
+  margin-top: 230px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
+.product h3 span {
+  font-weight: 500;
+}
+/* About */
+.about {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.contact {
+  height: 740px;
+}
+h2 {
+  font-size: 25px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+h3 span {
+  font-weight: 500;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 200;
+}
+h5 {
+  font-size: 25px;
+  color: rgb(48, 46, 46);
+  font-weight: 400;
+}
+
+a {
+  font-size: 20px;
+  color: rgb(107, 106, 106);
+  font-weight: 300;
+}
+
+p {
+  font-size: 21px;
+  color: #6d6c6c;
+  font-weight: 200;
+  margin: 30px 0;
+}
+form {
+  margin-bottom: 50px;
+}
+label {
+  font-size: 18px;
+  color: #6d6c6c;
+  font-weight: 200;
+}
+.product p {
+  font-size: 18px;
+  color: #6d6c6c;
+  font-weight: 200;
+  margin: 30px 0;
+  text-align: justify;
+}
+
+.product h3 {
+  padding-top: 150px;
+}
+.team p {
+  font-size: 18px;
+  color: #6d6c6c;
+  font-weight: 200;
+  margin: 10px 0;
+}
+.team h5 {
+  font-size: 18px;
+  color: #6d6c6c;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.feature p {
+  text-align: start;
+}
+.about img {
+  border-radius: 50px;
+  width: 500px;
+}
+.team img {
+  border-radius: 120px;
+  width: 200px;
+  height: 200px;
+}
+.product img {
+  border-radius: 50px;
+  height: 350px;
+}
+
+/* Utility */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+/* DESKTOP-VERSION*/
+@media (min-width: 992px) {
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .jumbotron {
+    margin-top: -75px;
+    height: 690px;
+  }
+  .jumbotron .display-4 {
+    font-size: 62px;
+  }
+  .about {
+    text-align: left;
+  }
+}
